@@ -1,4 +1,4 @@
-# eip-ai-search-update
+# ai-search-update
 
 This script is designed to run in an Azure Runbook, leveraging Azure Automation Account variables for storing and retrieving necessary information. The script connects to a private GitHub repository that contains backups of HTML files from a Confluence Wiki. It searches for HTML files modified within the past specified number of days (defined by the `aiUpdate-fileAgeDays` variable in the Automation Account). The content of these files is then uploaded to an Azure Blob Storage container. Additionally, the script parses the HTML files to extract their last modified dates, facilitating updates to the Azure AI Search Index based on the new data.
 
